@@ -3,55 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <title>Minamerket – Din guide til barneprodukter</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/tailwind-3.4.17.js"></script>
 
   <style>
-    body {
-      background: linear-gradient(180deg, #f7eee4 0%, #f0d9c3 100%);
-      font-family: 'ui-sans-serif', 'system-ui', sans-serif;
-    }
+	body {
+		background: linear-gradient(180deg, #f7eee4 0%, #f0d9c3 100%);
+		font-family: 'ui-sans-serif', 'system-ui', sans-serif;
+	}
 
-    @keyframes slideInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+	@keyframes slideInUp {
+		0% {
+			opacity: 0;
+			transform: translateY(40px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
 
-.animate-slideInUp {
-  animation: slideInUp 0.8s ease-out both;
-}
+	.animate-slideInUp {
+		animation: slideInUp 0.8s ease-out both;
+	}
 
 
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+	@keyframes fadeInUp {
+		0% {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
 
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-      100% { transform: translateY(0px); }
-    }
+	@keyframes float {
+		0% { transform: translateY(0px); }
+		50% { transform: translateY(-10px); }
+		100% { transform: translateY(0px); }
+	}
 
-    .animate-fadeInUp {
-      animation: fadeInUp 1s ease-out both;
-    }
+	.animate-fadeInUp {
+		animation: fadeInUp 1s ease-out both;
+	}
 
-    .animate-float {
-      animation: float 6s ease-in-out infinite;
-    }
+	.animate-float {
+		animation: float 6s ease-in-out infinite;
+	}
   </style>
 </head>
 
@@ -101,7 +102,7 @@
 
 	<!-- Right: Screenshot -->
 	<div class="flex-1 flex justify-center animate-slideInUp">
-	  <img src="screenshot.png" alt="App Screenshot"
+	  <img src="Screenshot.png" alt="App Screenshot"
 	       class="max-w-[260px] md:max-w-[320px] rounded-2xl shadow-xl border border-white/40" />
 	</div>
 

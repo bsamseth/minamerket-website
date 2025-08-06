@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+	background: linear-gradient(180deg, #f7eee4 0%, #f0d9c3 100%);
+	font-family: 'ui-sans-serif', 'system-ui', sans-serif;
+}
+
+@keyframes slideInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(40px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-slideInUp {
+	animation: slideInUp 0.8s ease-out both;
+}
+
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes float {
+	0% { transform: translateY(0px); }
+	50% { transform: translateY(-10px); }
+	100% { transform: translateY(0px); }
+}
+
+.animate-fadeInUp {
+	animation: fadeInUp 1s ease-out both;
+}
+
+.animate-float {
+	animation: float 6s ease-in-out infinite;
+}
